@@ -85,9 +85,39 @@ console.log("Dia: "+ d.getDate());
 console.log("Horas: "+ d.getHours());
 console.log("Minutos: "+ d.getMinutes());
 
+//Funções:
+function soma(n1,n2){
+  return n1+n2;
+}
 
+console.log(soma(10,15));
+alert("O Resultado da soma de 10 e 15 na função soma é: "+soma(10,15));
 
+function botao(){
+  alert("Parabêns, seu primeiro botão!");
+  document.getElementById("h3texto").innerHTML = "<b>Obrigado por Clicar</b>";
+}
 
+function redirecionar(){
+  window.open("https://conectesus-paciente.saude.gov.br/");
+}
 
+function trocar(elemento){
+  //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse aqui.";
+  elemento.innerHTML = "Obrigado por passar o mouse aqui.";
+}
+
+function voltar(elemento){
+ // document.getElementById("mousemove").innerHTML = "Passe o mouse aqui.";
+  elemento.innerHTML = "Passe o mouse aqui.";
+}
+
+function carregando(){
+  alert("Página carregada.");
+ }
+
+function pegarvalor(elemento){
+  console.log(elemento.value);
+}
 
 

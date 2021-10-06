@@ -5,8 +5,21 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-       <h1>Minha Primeira Página</h1>   
+    <body onload="carregando()">
+       <h1>Minha Primeira Página</h1> 
+       <button type="button" onclick="botao()">Clique aqui</button>        
+       <p id="h3texto" onclick="redirecionar()"></p> 
+       <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui.</p>
+       <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui.</p>
+       
+       <select onchange="pegarvalor(this)">
+           <option value="1">Valor 1</option>
+           <option value="2">Valor 2</option>
+           <option value="3">Valor 3</option>
+           <option value="4">Valor 4</option>
+           <option value="5">Valor 5</option>
+           <option value="6">Valor 6</option>
+       </select>
     </body>
 
 </html>
